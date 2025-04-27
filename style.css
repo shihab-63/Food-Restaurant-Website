@@ -41,6 +41,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 30px 14%;
+    backdrop-filter: blur(2px);
     transition: all .50s ease;
 }
 
@@ -347,4 +348,147 @@ section {
 .row_btn {
     text-align: center;
     margin-top: 6rem;
+}
+
+/* Customer Section */
+.customer_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.box {
+    padding: 35px;
+    background: var(--other-color);
+    border-radius: 3rem;
+}
+
+.box p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.in_box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bx_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.bx_text h4 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.bx_text h5 {
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.ratings i {
+    color: var(--main-color);
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+/* ======Contect Section======== */
+.contact_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact_img {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.contact_img img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.contact_img img:hover {
+    transform: scale(0.9);
+}
+
+.contact_text {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact_text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+}
+
+.contact_text p {
+    max-width: 950px;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    margin-bottom: 3rem;
+    line-height: 30px;
+}
+
+.social i {
+    display: inline-block;
+    font-size: 32px;
+    color: var(--second-color);
+    margin: 0 20px;
+    transition: all .50s ease;
+}
+
+.social .clr i {
+    color: var(--main-color);
+}
+
+.social i:hover {
+    color: var(--main-color);
+    transform: scale(1.1) translateY(-5px);
+}
+
+.detels {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.del a {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.del i {
+    color: var(--main-color);
+    vertical-align: middle;
+    font-size: 28px;
+    margin-right: 12px;
+    transition: all .50s ease;
+}
+
+.del i:hover {
+    transform: scale(1.1) translateY(-5px);
 }
